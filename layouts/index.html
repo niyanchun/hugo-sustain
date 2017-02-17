@@ -7,11 +7,14 @@
         <div class="avatar">
           <img class="img-circle" src="{{ .Site.BaseURL }}img/{{ .Site.Params.avatar }}" alt="Responsive image">
         </div>
-        <h3>I'm <strong>{{ .Site.Params.author }}</strong>, a Software Engineer.</h3>
-        <h3>I love all things computer science and maths.</h3>
-        <h3>Have a look at some of my working <a href="{{ .Site.BaseURL }}projects/"> projects</a>.</h3>
-        <h3>For more check out my academic &amp; professional <a href="https://demo.nurlan.co/hugo-vitae/">resume</a>.</h3>
-        <h3>Contact me at <a href="http://twitter.com/{{ .Site.Params.Social.Twitter }}">@{{ .Site.Params.Social.Twitter }}</a> or by <a href="mailto:{{ .Site.Params.Social.Email }}">email</a>.</h3>
+        <h4>I'm <strong>{{ .Site.Params.author }}</strong>, </h4>
+        <p>毕业于西安电子科技大学信息安全专业。</p>
+        <p>在创业公司做过嵌入式研发，在华为搞过内存数据库研发。</p>
+        <p>目前在海航生态科技技术研究院从事云计算相关工作。</p>
+        <p>喜欢听歌，探究各种新技术，擅长Linux环境开发及使用。</p>
+        <p>你可以通过我的<a target=“_blank” href="{{ .Site.Params.tech }}">技术博客</a>了解我擅长的技术及领域，</p>
+        <p>也可以通过我的<a target=“_blank” href="{{ .Site.Params.life }}/blog">生活博客</a>了解渺小的我。</p>
+        <h4>You can contact me by <a href="mailto:{{ .Site.Params.Social.Email }}">email</a>.</h4>
         {{ partial "social.html" . }}
         </div>
       </section>
